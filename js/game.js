@@ -24,5 +24,4 @@ button.addEventListener("click", function() {
             rutor[i].style.background = "red";
         }
 
-
-})
+}
