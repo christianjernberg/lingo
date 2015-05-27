@@ -13,16 +13,16 @@ button.addEventListener("click", function() {
     
     for(var i = 0; i < 5; i++)
     {
-        rutor[i].innerHTML = userWord[i]; 
-    }
-    
-    if(valtOrd === userWord)
-    {
-        alert("GRATTISSS");
-    }
-    else
-    {
-        alert("Försök igen!");
-    }
+        rutor[i].innerHTML = userWord[i];
+        
+        if(userWord === valtOrd[i])
+        {
+            rutor[i].style.background = "green";
+        }
+        else
+        {
+            rutor[i].style.background = "red";
+        }
+
 
 })
