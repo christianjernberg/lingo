@@ -7,6 +7,14 @@ console.log(valtOrd);
 var button = document.getElementsByTagName("button")[0];
 button.addEventListener("click", function() {
     var userWord = document.getElementsByTagName("input")[0].value;
+
+    //Hämta rutor och lägg in bokstäver korrekt
+    var rutor = document.getElementsByTagName("td");
+    
+    for(var i = 0; i < 5; i++)
+    {
+        rutor[i].innerHTML = userWord[i]; 
+    }
     
     if(valtOrd === userWord)
     {
