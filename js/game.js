@@ -17,6 +17,4 @@ button.addEventListener("click", function() {
         alert("Försök igen!");
     }
 
-
-
 })
