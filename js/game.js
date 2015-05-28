@@ -1,7 +1,7 @@
 //Slumpar ett ord från lista
 var ordLista = ["mjauu", "malin", "banan"];
 var valtOrd = ordLista[Math.floor(Math.random() * 3)];
-console.log(valtOrd);
+var points = 0;
 
 //Användaren gissar
 var button = document.getElementsByTagName("button")[0];
@@ -23,5 +23,12 @@ button.addEventListener("click", function() {
         {
             rutor[i].style.background = "red";
         }
+    }
+    
+    if(valtOrd === userWord)
+    {
+        points += 5000;
+        alert("GRATTIS DU VANN 5000 KR")
+    }
 
-}
+})
